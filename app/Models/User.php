@@ -6,19 +6,12 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class user extends Authenticatable
 {
     use Notifiable;
-    protected $table = 'user';
-    //自帶過濾字段 如果不包含 以下内容著不更新
-    protected $fillable = [
-        'name','email','password',
-    ];
-    //隱藏密碼信息
-    protected $hidden = [
-        'password','remember_token',
-    ];
-     * The attributes that are mass assignable.
+    protected $table = 'users';
+
+     /**The attributes that are mass assignable.
      *
      * @var array
      */
