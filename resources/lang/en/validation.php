@@ -134,7 +134,11 @@ return [
             'rule-name' => 'custom-message',
         ],
     ],
-
+    'custom' => [
+    'email' => [
+        'required' => '邮箱地址不能为空！',
+    ],
+],
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Attributes
