@@ -6,6 +6,7 @@
   </head>
   @include('loy._header')
   <body>
+    @include('shared._messages')
     @yield('content')
      @include('loy._footer')
   </body>
