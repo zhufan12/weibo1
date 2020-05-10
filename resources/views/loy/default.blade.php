@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Weibo App</title>
-    <link rel="stylesheet" href="..{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   </head>
 
   <body>
@@ -16,6 +16,6 @@
       </div>
     </div>
 
-    <script src="..{{ mix('js/app.js') }}"></script>
+    <script src="{{asset('/js/app.js')}}"></script>
   </body>
 </html>
